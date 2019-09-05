@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Metadata Microservice</title>
+  </head>
+  
+  <style>
+    body{
+      text-align:center;
+      padding-top:5vh;
+      background-color:#c4a7ff;
+    }
+    
+    h3{
+      padding-top:10vh;
+    }
+    
+    form{
+      padding-top:10vh;
+      padding-bottom:20vh;
+      
+    }
+  
+  </style>
+  
+  
+  <body>
+    <h1>
+      File Metadata Microservice
+    </h1>
+    
+    <h3>
+      Upload a file and get a json response with metadata information<br>
+      such as File Name, Type and Size
+    </h3>
+    
+    <form action="/api/fileanalyse" method="post" enctype="multipart/form-data">
+      <input type="file" name="upfile"><br><br>
+      <input type="submit" value="Upload">      
+    </form>
+    
+    <footer>
+        <p>
+          A project from <a href="http://freecodecamp.org/">FreeCodeCamp</a> | Coded by <a href="http://yolimarmarin.github.io/about-me/">Yolimar M</a>
+        </p>
+    </footer>
+    
+  </body>
+  
+</html>
